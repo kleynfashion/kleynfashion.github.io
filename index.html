@@ -203,10 +203,14 @@
     document.addEventListener('DOMContentLoaded', function () {
     var videoBg = document.getElementById('video-bg');
     var mobileVideoSrc = 'assets/img/mobile-background.mp4'; 
+    var normalVideoSrc = 'assets/img/background.mp4'; 
 
     function checkScreenSize() {
       if (window.innerWidth < 768) { 
         videoBg.src = mobileVideoSrc;
+      }
+      else {
+        videoBg.src = normalVideoSrc;
       }
     }
 
